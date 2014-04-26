@@ -46,7 +46,7 @@ clientMessage(ChatColor.DARK_BLUE + "/MC_Revamped");
 clientMessage(ChatColor.DARK_BLUE + "/Ores");
 if(cmd[0] == "Ores")
 {
-clientMessage(ChatColor.AQUA + "All Ores Added!
+clientMessage(ChatColor.AQUA + "All Ores Added!");
 Player.addItemInventory(196, 64, 0);
 Player.addItemInventory(197, 64, 0);
 Player.addItemInventory(204, 64, 0);
