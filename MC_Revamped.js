@@ -235,4 +235,5 @@ Block.defineBlock(208, "Mushroom Stem", [["mushroom_block_inside" , 0],
                                          ["mushroom_block_skin_stem" , 0],
                                          ["mushroom_block_skin_stem" , 0]], 6, true, 0);
 Block.setDestroyTime(208, 0.5);
+
 }
