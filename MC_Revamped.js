@@ -186,7 +186,7 @@ Player.addItemInventory(204, 64, 0);
 }
 if(cmd[0] == "Tools")
 {
-clientMessage(ChatColor.AQUA + "All Tools Added!
+clientMessage(ChatColor.AQUA + "All Tools Added!");
 Player.addItemInventory(410, 64, 0);
 Player.addItemInventory(413, 64, 0);
 Player.addItemInventory(414, 64, 0);
