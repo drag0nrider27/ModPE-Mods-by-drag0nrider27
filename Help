@@ -1,0 +1,114 @@
+/*ManaCraft™*/
+/*By: drag0nrider27*/
+
+//variables
+var pink = [0xFF00FF]
+//Overide
+
+//ModPE.overrideTexture("images/items-opaque.png", "
+//Wands
+
+ModPE.setItem(470, "skull_wither", 0, "FrostWand");
+ModPE.setItem(471, "skull_zombie", 0, "FlameWand");
+ModPE.setItem(472, "skull_skeleton", 0, "LightWand");
+ModPE.setItem(473, "skull_steve", 0, "ExplosiveWand");
+ModPE.setItem(474, "skull_creeper", 0, "WindWand");
+ModPE.setItem(475, "diamond_horse_armor", 0, "InstaMineWand");
+//Items (Not Wands)
+
+ModPE.setItem(477, "iron_horse_armor", 0, "ManalianCrystal");
+ModPE.setItem(478, "gold_horse_armor", 0, "CursedStick")
+ModPE.setItem(479, "item_frame", 0, "DarkEssence");
+//Language
+
+ModPE.langEdit("item.FrostWand.name", "Frost Wand");
+ModPE.langEdit("item.FlameWand.name", "Flame Wand");
+ModPE.langEdit("item.LightWand.name", "Light Wand");
+ModPE.langEdit("item.ExplosiveWand.name", "Explosive Wand");
+ModPE.langEdit("item.WindWand.name", "Wind Wand");
+ModPE.langEdit("item.InstaMineWand.name", "InstaMine Wand");
+ModPE.langEdit("item.ManalianCrystal.name", "Manalian Crystal");
+ModPE.langEdit("item.CursedStick.name", "Cursed Stick");
+ModPE.langEdit("item.DarkEssence.name", "Dark Essence");
+//C Recipes & Category
+
+Item.addCraftRecipe(478,1,0,[280,1,0,479,2,0]);
+Item.addCraftRecipe(470,1,0,[332,1,0,478,2,0,477,1,0]);
+Item.addCraftRecipe(471,1,0,[259,1,0,478,2,0,477,1,0]);
+Item.addCraftRecipe(472,1,0,[348,1,0,478,2,0,477,1,0]);
+Item.addCraftRecipe(473,1,0,[46,1,0,478,2,0,477,1,0]);
+Item.addCraftRecipe(474,1,0,[18,1,0,478,2,0,477,1,0]);
+Item.addFurnaceRecipe(477,0,200);
+//Blocks
+
+Block.defineBlock(200, "Manalian Ore", "diamond_ore", 0, false, 0);
+Block.setDestroyTime(200, 7);
+Block.setColor(200,pink);
+Block.setLightLevel(200,7);
+Block.setExplosionResistance(200,3);
+
+function modTick()
+{
+var item = getCarriedItem();
+
+//Manalian Break Time
+
+if (item==270);
+{
+Block.setDestroyTime(200, 5.5);
+}
+if (item==274);
+{
+Block.setDestroyTime(200, 4.5);
+}
+if (item==257);
+{
+Block.setDestroyTime(200, 3.5);
+}
+if (item==285);
+{
+Block.setDestroyTime(200, 3);
+}
+if (item==278);
+{
+Block.setDestroyTime(200, 1.5);
+}
+
+}
+
+function procCmd(command)
+{
+var cmd = command.split(" ");
+
+}
+
+function newLevel()
+{
+//Startup Message
+
+clientMessage(ChatColor.BLUE + "Welcome To " + ChatColor.LIGHT_PURPLE + "ManaCraft");
+clientMessage(ChatColor.BLUE + "You Are Running " + ChatColor.RED + "V. 1.1.1");
+clientMessage(ChatColor.LIGHT_PURPLE + "ManaCraft " + ChatColor.BLUE + "By: ");
+clientMessage(ChatColor.GOLD + "!-!-!-!-! " + ChatColor.AQUA + "drag0nrider27" + ChatColor.GOLD + " !-!-!-!-!");
+
+
+}
+
+function leaveGame()
+{
+
+}
+function useItem(x, y, z, itemId, blockId, side)
+{
+if (itemId==473);
+}
+Level.explode(2);
+{
+}
+{
+else if (itemId==472);
+}
+{
+Level.setTile(x,y,z,89);
+}
+}
